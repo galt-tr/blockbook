@@ -1,9 +1,9 @@
 {
   "coin": {
-      "name": "Bcash",
-      "shortcut": "BCHSV",
-      "label": "Bitcoin Cash SV",
-      "alias": "bcashsv"
+      "name": "Bitcoin SV",
+      "shortcut": "BSV",
+      "label": "Bitcoin SV",
+      "alias": "bsv"
   },
   "ports": {
     "backend_rpc": 8046,
@@ -19,9 +19,9 @@
     "message_queue_binding_template": "tcp://127.0.0.1:{{.Ports.BackendMessageQueue}}"
   },
   "backend": {
-    "package_name": "backend-bcashsv",
+    "package_name": "backend-bsv",
     "package_revision": "satoshilabs-1",
-    "system_user": "bcashsv",
+    "system_user": "bsv",
     "version": "1.0.1",
     "binary_url": "https://download.bitcoinsv.io/bitcoinsv/1.0.1/bitcoin-sv-1.0.1-x86_64-linux-gnu.tar.gz",
     "verification_type": "sha256",
@@ -45,8 +45,8 @@
     }
   },
   "blockbook": {
-    "package_name": "blockbook-bcashsv",
-    "system_user": "blockbook-bcashsv",
+    "package_name": "blockbook-bsv",
+    "system_user": "blockbook-bsv",
     "internal_binding_template": ":{{.Ports.BlockbookInternal}}",
     "public_binding_template": ":{{.Ports.BlockbookPublic}}",
     "explorer_url": "",
